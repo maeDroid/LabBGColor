@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/app_name"
+        android:text="@string/app_name"
+        android:textSize="36sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:id="@+id/colorGroup">
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/red"
+            android:textSize="20sp"
+            android:id="@+id/optRed"
+            android:onClick="changeBGColor"
+            />
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/orange"
+            android:textSize="20sp"
+            android:id="@+id/optOrange"
+            android:onClick="changeBGColor"
+
+            />
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/yellow"
+            android:textSize="20sp"
+            android:id="@+id/optYellow"
+            android:onClick="changeBGColor"
+            />
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/green"
+            android:textSize="20sp"
+            android:id="@+id/optGreen"
+            android:onClick="changeBGColor"
+            />
+
+        <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:text="@string/blue"
+        android:textSize="20sp"
+        android:id="@+id/optBlue"
+        android:onClick="changeBGColor"
+        />
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/white"
+            android:textSize="20sp"
+            android:id="@+id/optWhite"
+            android:onClick="changeBGColor"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:id="@+id/instructions"
+        android:text="@string/instructions"
+        android:textSize="20sp" />
+
+</LinearLayout>
